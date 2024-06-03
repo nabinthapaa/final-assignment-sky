@@ -24,6 +24,10 @@
   outline: 1px solid red;
 }
 
+.hidden {
+  display: none;
+}
+
 :root body:has(#theme-toggle[type=checkbox]:checked) {
   --text-primary: #fff;
   --background-primary: #060519;
@@ -34,6 +38,11 @@
 }
 :root body:has(#theme-toggle[type=checkbox]:checked) .container:has(.header) .header {
   background: #000;
+}
+:root body:has(#theme-toggle[type=checkbox]:checked) .button__image,
+:root body:has(#theme-toggle[type=checkbox]:checked) .hero__social-links,
+:root body:has(#theme-toggle[type=checkbox]:checked) .footer__link {
+  filter: invert(1);
 }
 
 .button {
@@ -83,6 +92,11 @@ body {
   --background-secondary: #f4f6fb;
   --color-accent: #433be3;
   font-family: "Montserrat", sans-serif;
+}
+
+svg {
+  fill: var(--text-primary);
+  stroke: var(--text-primary);
 }
 
 .header {

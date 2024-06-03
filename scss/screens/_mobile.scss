@@ -3,6 +3,11 @@ body {
   font-family: $font-family-montserrat;
 }
 
+svg {
+  fill: var(--text-primary);
+  stroke: var(--text-primary);
+}
+
 .header {
   display: flex;
   align-items: center;

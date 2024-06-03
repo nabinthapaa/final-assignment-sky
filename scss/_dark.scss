@@ -7,4 +7,10 @@
       background: #000;
     }
   }
+
+  .button__image,
+  .hero__social-links,
+  .footer__link {
+    filter: invert(1);
+  }
 }
