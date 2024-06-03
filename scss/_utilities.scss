@@ -1,6 +1,7 @@
-@import "variables";
 .container {
   width: 100%;
+  color: var(--text-primary);
+  background: var(--background-primary);
 
   &__title {
     text-align: center;
@@ -15,6 +16,8 @@
 .wrapper {
   width: 80%;
   margin-inline: auto;
+  color: var(--text-primary);
+  background: var(--background-primary);
 }
 
 .border {

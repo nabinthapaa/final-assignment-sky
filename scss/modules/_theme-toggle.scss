@@ -1,0 +1,16 @@
+#theme-toggle {
+  position: relative;
+  height: 24px;
+  width: 24px;
+  appearance: none;
+
+  &::after {
+    content: "🌚";
+    position: absolute;
+    inset: 0;
+  }
+
+  &:checked::after {
+    content: "🌝";
+  }
+}
