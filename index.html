@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body>
+  <body class="dark">
     <!-- TODO: Remove duplicate navs -->
     <div class="container">
       <div class="wrapper">
@@ -41,9 +41,11 @@
               </ul>
             </nav>
             <div class="header__theme-toggle">
-              <button class="header__theme-toggle-button">
-                <span class="header__theme-toggle__dark">🌝</span>
-              </button>
+              <input
+                id="theme-toggle"
+                type="checkbox"
+                class="header__theme-toggle-button"
+              />
             </div>
             <nav class="header__nav--mobile">
               <button class="header__nav-toggle">Menu</button>
@@ -84,8 +86,10 @@
               </p>
             </div>
             <div class="hero__cta">
-              <button class="hero__cta-button">Say Hello</button>
-              <button class="hero__cta-button hero__cta-button--naked">
+              <button class="hero__button button button--primary">
+                Say Hello
+              </button>
+              <button class="hero__button button button--naked">
                 <div class="button__image">
                   <img src="assets/logos/download.svg" alt="download icon" />
                 </div>
@@ -157,7 +161,7 @@
                 <img src="assets/logos/figma.svg" alt="figma" />
               </div>
               <div class="project__tool">
-                <img src="assets/logos/whimsical.png" alt="whimsical" />
+                <img src="assets/logos/whimsical.svg" alt="whimsical" />
               </div>
               <div class="project__tool">
                 <img src="assets/logos/invision.svg" alt="invision" />
@@ -172,7 +176,7 @@
                 <img src="assets/logos/git.svg" alt="git" />
               </div>
             </div>
-            <button class="project__button">Study case</button>
+            <button class="button button--primary">Study case</button>
           </div>
         </div>
       </section>
@@ -209,13 +213,13 @@
                 <img src="assets/logos/figma.svg" alt="figma" />
               </div>
               <div class="project__tool">
-                <img src="assets/logos/whimsical.png" alt="whimsical" />
+                <img src="assets/logos/whimsical.svg" alt="whimsical" />
               </div>
               <div class="project__tool">
                 <img src="assets/logos/invision.svg" alt="invision" />
               </div>
             </div>
-            <button class="project__button">Study case</button>
+            <button class="button button--primary">Study case</button>
           </div>
         </div>
       </section>
@@ -251,13 +255,13 @@
                 <img src="assets/logos/figma.svg" alt="figma" />
               </div>
               <div class="project__tool">
-                <img src="assets/logos/whimsical.png" alt="whimsical" />
+                <img src="assets/logos/whimsical.svg" alt="whimsical" />
               </div>
               <div class="project__tool">
                 <img src="assets/logos/invision.svg" alt="invision" />
               </div>
             </div>
-            <button class="project__button">Study case</button>
+            <button class="button button--primary">Study case</button>
           </div>
         </div>
       </section>
@@ -281,7 +285,7 @@
             </div>
             <div class="toolkit__item">
               <div class="toolkit__image">
-                <img src="assets/logos/whimsical.png" alt="" />
+                <img src="assets/logos/whimsical.svg" alt="" />
               </div>
               <div class="toolkit__info">
                 <h3 class="toolkit__name">Whimsical</h3>
@@ -343,37 +347,36 @@
               </div>
             </div>
           </div>
-          <button class="toolkit__load-more-button">
+          <button class="button button--secondary toolkit__load-more-button">
             Load More Applicaton and Tools
           </button>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
-        <div class="wrapper footer__wrapper">
-          <p class="footer__head">Let's get in touch</p>
-          <p class="footer__contact">
-            For business inquiry please send email to
-            nanangprasetya.2000@gmail.com
-          </p>
-          <button class="footer__button">Say hello</button>
-          <div class="footer__links-wrapper">
-            <a href="#" class="footer__link">
-              <img src="assets/logos/linkedin.svg" alt="Dribble" />
-            </a>
-            <a href="#" class="footer__link">
-              <img src="assets/logos/instagram.svg" alt="Dribble" />
-            </a>
-            <a href="#" class="footer__link">
-              <img src="assets/logos/dribbble.svg" alt="Dribble" />
-            </a>
-            <a href="#" class="footer__link">
-              <img src="assets/logos/github.svg" alt="Dribble" />
-            </a>
-          </div>
+      <div class="footer__wrapper">
+        <p class="footer__head">Let's get in touch</p>
+        <p class="footer__contact">
+          For business inquiry please send email to
+          nanangprasetya.2000@gmail.com
+        </p>
+        <button class="footer__button button button--primary">Say hello</button>
+        <div class="footer__links-wrapper">
+          <a href="#" class="footer__link">
+            <img src="assets/logos/linkedin.svg" alt="Dribble" />
+          </a>
+          <a href="#" class="footer__link">
+            <img src="assets/logos/instagram.svg" alt="Dribble" />
+          </a>
+          <a href="#" class="footer__link">
+            <img src="assets/logos/dribbble.svg" alt="Dribble" />
+          </a>
+          <a href="#" class="footer__link">
+            <img src="assets/logos/github.svg" alt="Dribble" />
+          </a>
         </div>
       </div>
     </footer>
+    <!-- SVG ASSETS -->
   </body>
 </html>

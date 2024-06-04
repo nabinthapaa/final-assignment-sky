@@ -1,0 +1,16 @@
+:root body:has(#theme-toggle[type="checkbox"]:checked) {
+  @include dark-colors;
+
+  .container:has(.header) {
+    background: #000000;
+    .header {
+      background: #000;
+    }
+  }
+
+  .button__image,
+  .hero__social-links,
+  .footer__link {
+    filter: invert(1);
+  }
+}

@@ -1,0 +1,139 @@
+@media screen and (min-width: $screen-mobile) {
+  .header {
+    &__logo-text {
+      font-size: $font-size-lg;
+      font-weight: $font-weight-semi-bold;
+      display: block;
+      text-transform: uppercase;
+    }
+
+    &__nav {
+      &--mobile {
+        display: none;
+      }
+
+      &--desktop {
+        display: flex;
+      }
+
+      &-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style-type: none;
+        gap: 3.5rem;
+      }
+    }
+  }
+
+  .hero {
+    &__job-title {
+      font-size: $font-size-3xl;
+    }
+
+    &__name {
+      font-size: $font-size-lg;
+    }
+
+    &__description {
+      font-size: $font-size-md;
+    }
+
+    &__cta {
+      flex-direction: row;
+
+      &-button {
+        padding: 0.5rem 2.5rem;
+      }
+    }
+  }
+
+  .project {
+    overflow: hidden;
+
+    &__wrapper {
+      flex-direction: row-reverse;
+      width: 80%;
+      margin-inline: auto;
+      align-items: stretch;
+      padding-inline-start: 2rem;
+      box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    }
+
+    &__pill {
+      position: static;
+    }
+
+    &__name {
+      font-size: $font-size-xl;
+    }
+
+    &__description {
+      font-size: $font-size-md;
+    }
+
+    &__tools {
+      justify-content: flex-start;
+      gap: 2rem;
+    }
+
+    &__button {
+      max-width: 160px;
+    }
+
+    &__body {
+      flex: 1 0 40%;
+      padding-block: 4rem;
+    }
+  }
+
+  .toolkit {
+    &__wrapper {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    &__item {
+      flex: 1 0 calc(33.33% - 2rem);
+
+      &::after {
+        display: none;
+      }
+
+      &:last-child {
+        &::before {
+          display: none;
+        }
+      }
+    }
+
+    &__name {
+      font-size: $font-size-lg;
+    }
+
+    &__description {
+      font-size: $font-size-sm;
+    }
+  }
+
+  .footer {
+    &__wrapper {
+      position: relative;
+    }
+
+    &__head {
+      font-size: $font-size-2xl;
+    }
+
+    &__contact {
+      font-size: 18px;
+    }
+
+    &__button {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  }
+}

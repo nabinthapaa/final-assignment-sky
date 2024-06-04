@@ -1,0 +1,28 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 100vh;
+  padding: 0.5rem 2rem;
+  border: none;
+  font-family: $font-family-roboto;
+  letter-spacing: 0.77px;
+
+  &--naked {
+    background: transparent;
+    color: var(--text-primary);
+    font-size: $font-size-xs;
+  }
+
+  &--primary {
+    color: $white;
+    text-transform: uppercase;
+    background-color: var(--color-accent);
+  }
+
+  &--secondary {
+    color: var(--text-primary);
+    background: var(--background-secondary);
+  }
+}
