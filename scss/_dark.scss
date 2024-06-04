@@ -1,4 +1,5 @@
-:root body:has(#theme-toggle[type="checkbox"]:checked) {
+:root body:has(#theme-toggle[type="checkbox"]:checked),
+body.dark {
   @include dark-colors;
 
   .container:has(.header) {
