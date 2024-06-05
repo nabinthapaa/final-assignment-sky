@@ -1,7 +1,7 @@
 @import "variables";
 @import "utilities";
 @import "mixins/manifest";
-@import "dark";
-
+@import "base/manifest";
 @import "modules/manifest";
-@import "screens/manifest";
+@import "dark";
+@import "partials/manifest";

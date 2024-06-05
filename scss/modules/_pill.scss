@@ -1,0 +1,21 @@
+.pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 100vh;
+  padding: 0.5rem 1.5rem;
+  max-width: 160px;
+  font-weight: $font-weight-medium;
+  color: var(--text-primary);
+  background: var(--background-secondary);
+
+  &__image {
+    max-width: 12px;
+    aspect-ratio: 1;
+  }
+
+  &__text {
+    font-size: $font-size-xs;
+  }
+}

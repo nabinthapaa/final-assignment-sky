@@ -1,0 +1,175 @@
+.toolkit {
+  background: var(--background-primary);
+  padding-bottom: 3rem;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    gap: 1rem;
+    margin-block: 2rem;
+
+    &:last-child {
+      position: relative;
+
+      &::before {
+        content: "";
+        height: 100%;
+        position: absolute;
+        inset: 0;
+        background-image: var(--tools-gradient);
+      }
+    }
+
+    &:nth-child(n):after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background: var(--background-secondary);
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__name {
+    font-size: $font-size-md;
+    font-weight: $font-weight-bold;
+  }
+
+  &__description {
+    line-height: $line-height-lg;
+    font-size: $font-size-xs;
+  }
+
+  &__image {
+    max-width: 60px;
+    aspect-ratio: 1;
+    padding: 1rem;
+    border-radius: 50%;
+    background: $white;
+    box-shadow: 5px 4px 31px 0px rgba(0, 0, 0, 0.07);
+    position: relative;
+    z-index: 100;
+
+    &--relative {
+      position: relative;
+    }
+  }
+
+  &__logo-absolute {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 1;
+    top: 10%;
+    z-index: 10;
+    left: -55%;
+    background: $white;
+    padding: 1rem;
+    border-radius: 50%;
+  }
+
+  &__load-more-button {
+    width: 100%;
+    padding-block: 1rem;
+  }
+}
+
+// Tablet Layout
+@media screen and (min-width: $screen-mobile) {
+  .toolkit {
+    &__wrapper {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    &__item {
+      flex: 1 0 calc(50% - 2rem);
+
+      &::after {
+        display: none;
+      }
+
+      &:last-child {
+        &::before {
+          display: none;
+        }
+      }
+      &:nth-child(n + 1)::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: var(--background-secondary);
+        margin-top: 1rem;
+      }
+      &:nth-child(2n + 1)::after {
+        width: calc(100% + 2rem);
+      }
+
+      &:nth-last-child(1)::after {
+        display: none;
+      }
+
+      &:nth-last-child(2)::after {
+        display: none;
+      }
+    }
+
+    &__name {
+      font-size: $font-size-lg;
+    }
+
+    &__description {
+      font-size: $font-size-sm;
+    }
+
+    &__button {
+      align-self: stretch;
+    }
+  }
+}
+
+// Desktop Layout
+@media screen and (min-width: $screen-desktop) {
+  .toolkit {
+    &__item {
+      flex: 1 0 calc(33.33% - 2rem);
+
+      &:nth-child(n)::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: var(--background-secondary);
+        margin-top: 1rem;
+      }
+
+      &:nth-child(3n - 2)::after {
+        width: calc(100% + 2rem);
+      }
+      &:nth-child(3n-1)::after {
+        width: calc(100% + 2rem);
+      }
+      &:nth-last-child(1)::after {
+        display: none;
+      }
+
+      &:nth-last-child(2)::after {
+        display: none;
+      }
+      &:nth-last-child(3)::after {
+        display: none;
+      }
+    }
+  }
+}
