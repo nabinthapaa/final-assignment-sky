@@ -1,0 +1,9 @@
+@mixin nth-child-sequence($start, $increment, $end) {
+  @for $i from 1 through $end {
+    $index: $start + ($i - 1) * $increment;
+    &:nth-child(#{$index}) {
+      // Add your styles here
+      background-color: lightblue; // Example style
+    }
+  }
+}
